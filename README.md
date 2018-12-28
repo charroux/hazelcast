@@ -11,3 +11,5 @@ get the container ID adress: <host_ip> and use it:
 docker run --name hazelcastcaching -e JAVA_OPTS="-Dhazelcast.local.publicAddress=<host_ip>:5701" -p 5701:5701 hazelcast/hazelcast:3.11.1
 
 docker run --link hazelcastcaching:hazelcast -p 8080:8181 caching
+
+http://localhost:8080/city/paris
