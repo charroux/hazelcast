@@ -13,3 +13,9 @@ docker run --name hazelcastcaching -e JAVA_OPTS="-Dhazelcast.local.publicAddress
 docker run --link hazelcastcaching:hazelcast -p 8080:8181 caching
 
 http://localhost:8080/city/paris
+
+docker container ps
+
+docker container stop containerID
+
+docker container rm containerID
